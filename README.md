@@ -1,5 +1,5 @@
 # Spotify Connected App
-### Project 8: SQL Library Manager
+### Spotify Web API Integration
 Author - Hans Steffens
 
 ## Project Overview
