@@ -12,16 +12,16 @@ const TimeRangeButtons = ({ activeRange, setActiveRange }) => {
       </li>
       <li>
         <button
-          className={activeRange === 'short' ? 'active' : ''}
-          onClick={() => setActiveRange('short')}>
-          This Month
+          className={activeRange === 'medium' ? 'active' : ''}
+          onClick={() => setActiveRange('medium')}>
+          Last 6 Months
         </button>
       </li>
       <li>
         <button
-          className={activeRange === 'medium' ? 'active' : ''}
-          onClick={() => setActiveRange('medium')}>
-          Last 6 Months
+          className={activeRange === 'short' ? 'active' : ''}
+          onClick={() => setActiveRange('short')}>
+          This Month
         </button>
       </li>
     </StyledRangeButtons>
