@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import { catchErrors } from "../utils";
 import { getPlaylistById, getAudioFeaturesForTracks } from "../spotify";
-import { TrackList, SectionWrapper } from "../components";
+import { TrackList, SectionWrapper, Loader } from "../components";
 import { StyledHeader, StyledDropdown } from "../styles";
 
 const Playlist = () => {
@@ -85,8 +85,8 @@ const Playlist = () => {
     }
 
     return [...tracksWithAudioFeatures].sort((a, b) => {
-      const aFeatures = a['audio_features'];
-      const bFeatures = b['audio_features'];
+      const aFeatures = a["audio_features"];
+      const bFeatures = b["audio_features"];
 
       if (!aFeatures || !bFeatures) {
         return false;
@@ -95,7 +95,6 @@ const Playlist = () => {
       return bFeatures[sortValue] - aFeatures[sortValue];
     });
   }, [sortValue, tracksWithAudioFeatures]);
- 
 
   return (
     <>
@@ -131,8 +130,9 @@ const Playlist = () => {
 
           <main>
             <SectionWrapper title="Playlist" breadcrumb={true}>
-              <>
-              <StyledDropdown> {/** props options here could be active={!!sortValue} */}
+              <StyledDropdown>
+                {" "}
+                {/** props options here could be active={!!sortValue} */}
                 <label className="sr-only" htmlFor="order-select">
                   Sort tracks
                 </label>
@@ -148,11 +148,8 @@ const Playlist = () => {
                     </option>
                   ))}
                 </select>
-                </StyledDropdown>
-              </>
-              {sortedTracks && (
-                <TrackList tracks={sortedTracks} />
-              )}
+              </StyledDropdown>
+              {sortedTracks ? <TrackList tracks={sortedTracks} /> : <Loader />}
             </SectionWrapper>
           </main>
         </>
