@@ -5,6 +5,12 @@ Author - Hans Steffens
 ## Project Overview
 This project is about a full stack web application to visualize personalized Spotify data with the help of Node.js, React, Express, Styled Components, and the Spotify Web API.
 
+![spotify_app_1](https://github.com/hanscode/spotify-connected-app/assets/3813749/8fb888bb-4bb9-4995-879c-cadc699a6f31)
+
+![spotify_app_2](https://github.com/hanscode/spotify-connected-app/assets/3813749/24c3c207-1c64-48e5-90c2-8174c50a6e2f)
+
+![spotify_app_3](https://github.com/hanscode/spotify-connected-app/assets/3813749/7f3abdc0-fda1-4c54-abfe-657f5bcbe380)
+
 ## Technologies used
 - [Node.js](https://nodejs.org/)
 - [Spotify Web API](https://developer.spotify.com/documentation/web-api/)
@@ -72,3 +78,5 @@ This project is about a full stack web application to visualize personalized Spo
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## 
