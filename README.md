@@ -3,7 +3,7 @@
 Author - Hans Steffens
 
 ## Project Overview
-This project is about a full stack web application to visualize personalized Spotify data with the help of Node.js, React, Styled Components, and the Spotify Web API.
+This project is about a full stack web application to visualize personalized Spotify data with the help of Node.js, React, Express, Styled Components, and the Spotify Web API.
 
 ## 🛠 Installation & Set Up
 
